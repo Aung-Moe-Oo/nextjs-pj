@@ -1,0 +1,55 @@
+.container {
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 18px;
+  padding: 50px;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  background-color: #e9e6f9;
+  color: #555;
+}
+.title {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: blueviolet;
+  padding: 5px;
+  width: max-content;
+}
+.linkTitle {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.link {
+  display: flex;
+  align-items: center;
+}
+.linkText {
+  margin-right: 20px;
+}
+.cardL {
+  flex: 2;
+}
+.cardS {
+  flex: 1;
+}
+.cardItem {
+  margin-bottom: 20px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    flex-direction: column;
+  }
+  .title,
+  .linkTitle {
+    font-size: 24px;
+  }
+  .cardItem {
+    text-align: center;
+    font-size: 14px;
+  }
+}

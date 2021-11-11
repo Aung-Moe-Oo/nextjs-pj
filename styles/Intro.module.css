@@ -1,0 +1,61 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 50px);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.card {
+  flex: 1;
+  padding: 100px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.title {
+  font-size: 50px;
+  margin: 0;
+}
+.brand {
+  color: blueviolet;
+}
+.desc {
+  margin: 0;
+  font-size: 20px;
+}
+.button {
+  border: 2px solid blueviolet;
+  background-color: transparent;
+  color: blueviolet;
+  font-weight: 700;
+  width: 100px;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.button:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .card {
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .desc {
+    display: none;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
